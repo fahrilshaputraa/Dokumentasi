@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  docsify:
+    image: node:latest
+    container_name: docsify
+    working_dir: /docs
+    volumes:
+      - .:/docs
+    ports:
+      - "3339:3000"
+    command: >
+      sh -c "npm install -g docsify-cli@latest && docsify serve ."
