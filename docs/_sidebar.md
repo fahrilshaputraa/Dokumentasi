@@ -3,5 +3,5 @@
   - [Overview](fingerprint/)
 - **Soal Test Web Developer**
   - [Soal Test](soal/test-web-developer/)
-- **test**
-  - [test](test/)
+- **Connect SSH Without Pass**
+  - [SSH Without Pass](server/ssh-without-password)
