@@ -34,5 +34,5 @@ Buatlah aplikasi **Todo List** menggunakan **Python/Django** dengan fitur CRUD l
 - **Database**: PostgreSQL (WAJIB)
 - **Framework**: Django 4.x
 - **Authentication**: Django built-in auth
-- **Frontend**: Bootstrap 5 + HTML/CSS
+- **Frontend**: Bootstrap 5 or Tailwind CSS + HTML/CSS
 - **Environment**: Virtual environment dengan requirements.txt
