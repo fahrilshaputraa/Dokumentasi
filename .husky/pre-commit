@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+node generate-all-pages.js
+git add docs/all-pages.md
