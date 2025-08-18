@@ -5,6 +5,8 @@
 * [Fingerprint](fingerprint/)
 * Instaling Docker
   * [Arambian](instaling-docker/arambian/)
+* Installing
+  * [Installing Zsh](installing/installing-zsh/)
 * [Materi](materi/)
 * [Mount Sdcard](mount-sdcard/)
 * Server
