@@ -4,6 +4,7 @@
 * [Django Docs](django-docs/)
 * [Fingerprint](fingerprint/)
 * [Materi](materi/)
+* [Mount Sdcard](mount-sdcard/)
 * Server
   * [Ssh Without Password](server/ssh-without-password.md)
 * [Soal](soal/)
