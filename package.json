@@ -25,6 +25,7 @@
   "homepage": "https://github.com/fahrilshaputraa/Dokumentasi#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "docsify-mermaid": "^1.0.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
