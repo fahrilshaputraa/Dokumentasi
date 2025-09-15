@@ -190,7 +190,7 @@ flowchart TD
 
   %% Worker rule matching
   W0 --> W1
-  W1 -- No --> R0[Return {status: "no_rule"}]:::terminal
+  W1 -- No --> R0[Return status: no_rule]:::terminal
   W1 -- Yes --> W2 --> W3 --> W4
 
   %% Inventory resolution branch
@@ -228,20 +228,3 @@ flowchart TD
 
   classDef terminal fill:#eee,stroke:#999,stroke-width:1px;
 ```
-
-## Notes & Future Enhancements
-
-- Authentication/Authorization: add DRF Token or JWT (djangorestframework-simplejwt) if required.
-- Filtering & Pagination: add standard filters for executions (by status, stage, host_ip), rules (by active), etc.
-- Webhook vs API: webhook remains at `/alerts/webhook` for systems already integrated; new integrations should prefer the API.
-
-## Code References
-
-- Router and docs: `middleware/core/urls.py:1`
-- Alert API serializers/viewsets: `middleware/alerts/api.py:1`
-- Inventory API serializers/viewsets: `middleware/inventory/api.py:1`
-- Playbooks API serializers/viewsets: `middleware/playbooks/api.py:1`
-- Celery task: `middleware/alerts/tasks.py:1`
-- Alert services/flow: `middleware/alerts/services.py:200`
-
-.
