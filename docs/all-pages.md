@@ -10,6 +10,7 @@
   * [Installing Zsh](installing/installing-zsh/)
 * [Materi](materi/)
 * [Mount Sdcard](mount-sdcard/)
+* [Plan Pm](plan-pm/)
 * Server
   * [Ssh Without Password](server/ssh-without-password.md)
 * [Singin Ssh](singin-ssh/)
