@@ -1,35 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-      // docsify-copy-code (defaults)
-      copyCode: {
-        buttonText: 'Copy to clipboard',
-        errorText: 'Error',
-        successText: 'Copied',
-      },
-    };
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
-  <script src="https://unpkg.com/docsify-copy-code@3"></script>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family: 'Zalando Sans SemiExpanded', sans-serif;
+      }
+      .app-name{
+        text-align: left !important;
+        padding-left: 1rem;
+      }
+      .app-name-link {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: inherit;
+        text-transform: none;
+        padding: 0;
+        background: none;
+        border: none;
+      }
+
+      .docsify-copy-code-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2.25rem;
+        min-height: 2.25rem;
+        padding: 0.25rem;
+        border-radius: 4px;
+        line-height: 1;
+        background-color: #ffffff;
+        outline-offset: 2px;
+        transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .docsify-copy-code-button:hover,
+      .docsify-copy-code-button:focus {
+        background-color: rgba(15, 98, 254, 0.1);
+        box-shadow: 0 0 0 2px rgba(15, 98, 254, 0.15);
+      }
+
+      .docsify-copy-code-button svg {
+        width: 1.1rem;
+        height: 1.1rem;
+        fill: currentColor;
+      }
+
+      .copy-btn-icon { display: inline-flex; }
+
+      .docsify-copy-code-button .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: 'Documentations',
+        repo: '',
+        // docsify-copy-code (defaults)
+        copyCode: {
+          buttonText: '<span class="copy-btn-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M16 1H6a2 2 0 0 0-2 2v15h2V3h10V1zm4 4H10a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 17H10V7h10v15z"/></svg></span><span class="sr-only">Copy code</span>',
+          errorText: 'Error',
+          successText: 'Copied',
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+      window.mermaid = mermaid;
+    </script>
+    <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@3"></script>
+  </body>
+  </html>
